@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="site-wrapper">
+		<header class="main-header">
+			<img src="" alt="" class="main-header__logo">
+			<nav class="main-nav  main-nav__closed">
+				<button class="main-nav__toggle" type="button"></button>
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+						<li class="main-nav__item main-nav__item--active"><a>Вязание на заказ</a></li>
+					</ul>
+					<ul class="main-nav__user-block">
+						<li class="main-nav__user"><a href="#">Поиск по сайту</a></li>
+						<li class="main-nav__user"><a href="#">Корзина: пока пуста</a></li>
+					</ul>
+				</div>
+			</nav>
+			<h1 class="main-header__title">Вязание на заказ</h1>
+		</header>
+		<main>
+			<form action="#" method="get" class="form"></form>
+				<p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+				<ul class="form__list">
+					<li class="form__item">
+						<h3 class="form__item-title">Тип</h3>
+						<input type="radio"	id="form__type1" name="form__radio" value="accessory">
+						<label for="form__radio1" checked><span class="form__radio-checked"></span>Аксессуар для интерьера</label>
+						<input type="radio" id="form__type2" name="form__radio" value="toy">
+						<label for="form__radio2"><span class="form__radio-checked"></span>Детская игрушка</label>
+					</li>
+					<li class="form__item">
+						<h3 class="form__item-title">Цвет</h3>
+						<input type="checkbox" id="form__color1" name="form__white">
+						<label for="form__color1"><span class="form__checkbox-checked"></span>Белый</label>
+						<input type="checkbox" id="form__color2" name="form__grey">
+						<label for="form__color2"><span class="form__checkbox-checked"></span>Серый</label>
+						<input type="checkbox" id="form__color3" name="form__tiffani">
+						<label for="form__color3"><span class="form__checkbox-checked"></span>«Тиффани»</label>
+						<input type="checkbox" id="form__color4" name="form__black">
+						<label for="form__color4"><span class="form__checkbox-checked"></span>Черный</label>
+						<input type="checkbox" id="form__color5" name="form__pink">
+						<label for="form__color5"><span class="form__checkbox-checked"></span>Розовый</label>
+						<input type="checkbox" id="form__color6" name="form__orange">
+						<label for="form__color6"><span class="form__checkbox-checked"></span>Оранжевый</label>
+					</li>
+					<li class="form__item">
+						<h3 class="form__item-title">ФИО</h3>
+						<label for="form__surname">Фамилия:</label>
+						<input type="text" id="form__surname" name="form__surname" required>
+						<label for="form__name">Имя:</label>
+						<input type="text" id="form__name" name="form__name" required>
+						<label for="form__patronymic">Отчество:</label>
+						<input type="text" id="form__patronymic" name="form__patronymic">
+					</li>
+					<li class="form__item">
+						<h3 class="form__item-title">Тел</h3>
+						<input type="text" class="form__tel" name="form__tel" required>
+						<h3 class="form__item-title">E-mail</h3>
+						<input type="text" class="form__email" name="form__email" required>
+					</li>
+					<li class="form__item">
+						<h3 class="form__item-title">Доп</h3>
+						<textarea class="form__text" name="form__text" required></textarea>
+					</li>
+				</ul>
+				<button type="submit" class="form__send  btn">Отправить заказ</button>
+		</main>
+		<footer class="main-footer">
+			<div class="social-links">
+				<a href="#" class="social-link social-link--in"></a>
+				<a href="#" class="social-link social-link--fb"></a>
+				<a href="#" class="social-link social-link--tw"></a>
+			</div>
+			<div class="main-footer__copyright">Разработано</div>
+		</footer>
+	</div>
+</body>
+</html>
