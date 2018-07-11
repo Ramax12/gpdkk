@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 	<title>Mishka</title>
 </head>
 <body>
@@ -41,15 +40,15 @@
 		<main>
 			<form action="#" method="get" class="form">
 				<p class="form__subtitle">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-				<ul class="form__list">
-					<li class="form__item">
+				<div class="form__list">
+					<fieldset class="form__item">
 						<legend class="form__item-title">Тип</legend>
 						<input type="radio"	id="form__type1" class="form__type" name="form__radio" value="accessory" checked>
-						<label for="form__type1" checked><span class="form__radio-checked"></span>Аксессуар для интерьера</label>
+						<label for="form__type1"><span class="form__radio-checked"></span>Аксессуар для интерьера</label>
 						<input type="radio" id="form__type2" class="form__type" name="form__radio" value="toy">
 						<label for="form__type2"><span class="form__radio-checked"></span>Детская игрушка</label>
-					</li>
-					<li class="form__item">
+					</fieldset>
+					<fieldset class="form__item">
 						<legend class="form__item-title">Цвет</legend>
 						<input type="checkbox" id="form__color1" class="form__color" name="form__white" checked>
 						<label for="form__color1"><span class="form__checkbox-checked"></span>Белый</label>
@@ -63,8 +62,8 @@
 						<label for="form__color5"><span class="form__checkbox-checked"></span>Розовый</label>
 						<input type="checkbox" id="form__color6" class="form__color" name="form__orange">
 						<label for="form__color6"><span class="form__checkbox-checked"></span>Оранжевый</label>
-					</li>
-					<li class="form__item">
+					</fieldset>
+					<fieldset class="form__item">
 						<legend class="form__item-title">ФИО</legend>
 						<label for="form__surname">Фамилия:</label>
 						<input type="text" id="form__surname" name="form__surname" placeholder="Укажите фамилию" required>
@@ -72,20 +71,20 @@
 						<input type="text" id="form__name" name="form__name" placeholder="Введите ваше имя" required>
 						<label for="form__patronymic">Отчество:</label>
 						<input type="text" id="form__patronymic" name="form__patronymic" placeholder="Отчество, если желаете">
-					</li>
-					<li class="form__item  form__item-margin">
+					</fieldset>
+					<fieldset class="form__item  form__item-margin">
 						<legend class="form__item-title">Тел</legend>
 						<input type="tel" class="form__tel" name="form__tel" placeholder="+7 XXX XX XX" required>
-					</li>
-					<li class="form__item  form__item-margin">
+					</fieldset>
+					<fieldset class="form__item  form__item-margin">
 						<legend class="form__item-title">E-mail</legend>
 						<input type="email" class="form__email" name="form__email" placeholder="Ваш e-mail" required>
-					</li>
-					<li class="form__item  form__item-margin">
+					</fieldset>
+					<fieldset class="form__item  form__item-margin">
 						<legend class="form__item-title">Доп</legend>
 						<textarea class="form__text" name="form__text" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
-					</li>
-				</ul>
+					</fieldset>
+				</div>
 				<div class="contacts_controls">
 					<button type="submit" class="form__send-btn  btn">Отправить заказ</button>
 				</div>
