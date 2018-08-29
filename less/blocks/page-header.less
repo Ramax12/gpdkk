@@ -1,0 +1,130 @@
+.page-header {
+	padding: 0 @padding-lateral-edge-mobile;
+	position: relative;
+	z-index: 1;
+	margin-top: 22px;
+}
+.page-header--appearance-img {
+	background: url("../img/hero-mobile.jpg") no-repeat;
+	background-position: 50% 36%;
+}
+.page-header__title {
+	max-width: 620px;
+	font-weight: 700;
+	font-size: 27px;
+	line-height: 30px;
+	color: #231f20;
+	text-align: center;
+	margin: 95px auto 120px;
+}
+.page-header__bottom-blocks {
+	margin: 0 -30px;
+}
+.page-header__bottom-block {
+	display: block;
+	position: relative;
+	padding: 8px 30px;
+
+	&::after {
+	background: url("../img/sprites.png") no-repeat;
+	background-position: 0 -56px;
+	width: 40px;
+	height: 62px;
+	position: absolute;
+	right: 35px;
+	top: 25px;
+	content: "";
+	}
+}
+.page-header__bottom-block:hover,
+.page-header__bottom-block:focus {
+	padding: 3px 30px 13px;
+	opacity: 1;
+
+	&::after {
+		opacity: .6;
+	}
+}
+.page-header__bottom-block:active p {
+	opacity: .6;
+}
+.page-header__bottom-block1 {
+	background: #63d1bb;
+}
+.page-header__bottom-block2 {
+	background: #56c3b2;
+}
+.page-header__bottom-block2::after {
+	background-position: -41px -56px;
+	width: 60px;
+	right: 25px;
+}
+.page-header__bottom-blocks p {
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 24px;
+	color: #fff;
+}
+
+@media (min-width: @tablet-min-width) {
+.page-header {
+	padding: 0 @padding-lateral-edge-tablet;
+	margin-top: 9px;
+
+	&::after {
+	bottom: 30px;
+	}
+}
+.page-header--appearance-img {
+	background: url("../img/hero-big.jpg") no-repeat;
+	background-position: 50% 130%;
+}
+.page-header__bottom-blocks {
+	display: flex;
+	position: relative;
+	margin: 0;
+
+	&::after {
+	background: url("../img/zigzag-fill-desktop.png");
+	width: 100%;
+	height: 24px;
+	position: absolute;
+	bottom: -10px;
+	content: "";
+	}
+}
+.page-header__bottom-block {
+	width: 50%;
+	padding-left: 35px;
+}
+.page-header__bottom-block:hover,
+.page-header__bottom-block:focus {
+	padding-left: 35px;
+}
+.page-header__bottom-blocks p {
+	font-size: 20px;
+	line-height: 30px;
+}
+}
+
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+.page-header--appearance-img {
+	background-size: 80%;
+}
+.page-header__title {
+	font-size: 53px;
+	line-height: 57px;
+	margin: 87px auto 375px;
+}
+}
+
+@media (min-width: @desktop-width) {
+.page-header--appearance-img {
+	background-size: 54%;
+}
+.page-header__title {
+	font-size: 53px;
+	line-height: 57px;
+	margin: 90px auto 360px;
+}
+}

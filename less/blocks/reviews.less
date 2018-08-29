@@ -1,0 +1,128 @@
+.reviews__title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+	color: #000;
+	padding: 0 @padding-lateral-edge-mobile;
+	margin-bottom: 24px;
+}
+.reviews__list {
+	padding: 0 @padding-lateral-edge-mobile;
+}
+.reviews__text {
+	max-width: 770px;
+	display: block;
+	font-size: 15px;
+	line-height: 30px;
+	color: @color-simple-text;
+	margin-bottom: 23px;
+}
+.reviews__name {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 30px;
+	color: @color-base;
+}
+.reviews__email {
+	display: block;
+	font-size: 17px;
+	line-height: 30px;
+	color: @color-simple-text;
+}
+.reviews__wrapper-arrows {
+	text-align: center;
+	padding: 0 @padding-lateral-edge-mobile;
+	margin: 40px 0;
+}
+.reviews__arrow-btn {
+	background: url("../img/sprites.png") no-repeat;
+	width: 50px;
+	height: 26px;
+	border: none;
+	cursor: pointer;
+}
+.reviews__arrow-btn:hover,
+.reviews__arrow-btn:focus {
+	opacity: .5;
+}
+.reviews__arrow-btn:active {
+	opacity: .2;
+}
+.reviews__prev-btn {
+	background-position: 0 -158px;
+	margin-right: 75px;
+}
+.reviews__next-btn {
+	background-position: -52px -158px;
+}
+.reviews_controls {
+	text-align: center;
+	padding: 0 @padding-lateral-edge-mobile;
+}
+.reviews__write-btn {
+	padding-right: 80px;
+	padding-left: 80px;
+}
+
+@media (min-width: @tablet-min-width) {
+.reviews {
+	background: url("../img/review.jpg") no-repeat;
+	position: relative;
+	padding-bottom: 100px;
+	margin-bottom: 20px;
+}
+.reviews__text {
+	font-size: 17px;
+}
+.reviews__title,
+.reviews__list,
+.reviews_controls {
+	padding: 0 @padding-lateral-edge-tablet;
+}
+.reviews__wrapper-arrows {
+	position: absolute;
+	right: 17px;
+	bottom: 100px;
+	padding: 0 @padding-lateral-edge-tablet;
+	margin: 10px 0;
+}
+.reviews__prev-btn {
+	margin-right: 35px;
+}
+.reviews__write-btn {
+	position: absolute;
+	right: @padding-lateral-edge-tablet;
+	top: 76px;
+	padding-right: 38px;
+	padding-left: 38px;
+}
+}
+
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+.reviews {
+	padding-top: 38px;
+}
+.reviews__title {
+	font-size: 43px;
+	line-height: 50px;
+	margin-bottom: 50px;
+}
+.reviews__text {
+	margin-bottom: 55px;
+}
+}
+
+@media (min-width: @desktop-width) {
+.reviews {
+	padding-top: 28px;
+}
+.reviews__title {
+	font-size: 53px;
+	line-height: 57px;
+	margin-bottom: 50px;
+}
+.reviews__text {
+	margin-bottom: 35px;
+}
+}
+

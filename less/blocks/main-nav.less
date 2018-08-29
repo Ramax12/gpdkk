@@ -1,0 +1,246 @@
+.main-nav {
+	position: relative;
+}
+.main-nav__toggle {
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: -10px;
+	top: -3px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.main-nav--closed .main-nav__toggle::before {
+	background: #000;
+	width: 20px;
+	height: 2px;
+	position: absolute;
+	top: 13px;
+	left: 10px;
+	content: "";
+	box-shadow: 0 6px 0 0 #000, 0 12px 0 0 #000;
+}
+.main-nav--opened .main-nav__toggle:before, 
+.main-nav--opened .main-nav__toggle:after {
+	background: #000;
+	width: 25px;
+	height: 2px;
+	position: absolute;
+	left: 8px;
+	content: "";
+	transform: rotate(45deg);
+}
+.main-nav--opened .main-nav__toggle::after {
+	transform: rotate(-45deg);
+}
+.main-nav__logo {
+	background: url("../img/sprites.png") no-repeat;
+	background-position: 0 0;
+	width: 86px;
+	height: 35px;
+	display: block;
+	margin: 0 auto 25px;
+}
+.main-nav__list,
+.main-nav__user-block {
+	margin: 0;
+	padding: 0;
+}
+.main-nav__item {
+	list-style: none;
+}
+.main-nav__link {
+	display: block;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 24px;
+	padding: 24px 45px 30px;
+}
+.main-nav__link--active,
+.main-nav__link--active:hover,
+.main-nav__link--active:active {
+	opacity: 1;
+	cursor: default
+}
+.main-nav__block--hidden-mobile,
+.main-nav__list-second {
+	display: none;
+}
+.main-nav__user {
+	position: relative;
+	list-style: none;
+	vertical-align: top;
+}
+.main-nav__user-search,
+.main-nav__user-basket {
+	display: block;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 24px;
+	padding: 24px 0 30px 45px;
+
+	&::before {
+		background: url("../img/sprites.png") no-repeat;
+		background-position: 0 -36px;
+		width: 18px;
+		height: 19px;
+		position: absolute;
+		top: 25px;
+		left: 0;
+		content: "";
+		opacity: .3;
+	}
+}
+.main-nav__user-basket {
+	&::before {
+		background-position: -18px -36px;
+		width: 21px;
+	}
+}
+.main-nav__user-search:hover,
+.main-nav__user-search:focus {
+	&::before {
+		background-position: -39px -36px;
+		opacity: 1;
+	}
+}
+.main-nav__user-basket:hover,
+.main-nav__user-basket:focus {
+	&::before {
+		background-position: -57px -36px;
+		opacity: 1;
+	}
+}
+
+@media (max-width: 767px) {
+.main-nav--closed .main-nav__list,
+.main-nav--closed .main-nav__user-block,
+.main-nav--closed .main-nav__block--hidden-mobile {
+	display: none;
+}
+}
+
+@media (min-width: @tablet-min-width) {
+.main-nav {
+	display: flex;
+	flex-wrap: wrap;
+}
+.main-nav__toggle {
+	display: none;
+}
+.main-nav__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.main-nav__link {
+	padding: 5px;
+	padding-left: 0;
+	margin: 17px 35px 17px 0;
+}
+.main-nav__block--hidden-mobile {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 24px;
+	padding: 6px 0px;
+}
+.main-nav__item--hidden-tablet {
+	display: none;
+}
+.main-nav__user-block {
+	margin-left: auto;	
+}
+.main-nav__user {
+	display: inline-block;
+	margin: 17px 0;
+}
+.main-nav__user-search,
+.main-nav__user-basket {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 55px;
+
+	&::before {
+		top: 7px;
+	}
+}
+.main-nav__user-search {
+	margin-right: 20px;
+	padding-bottom: 25px;
+}
+.main-nav__user-search span {		
+	display: none;
+}
+.main-nav__block--hidden-mobile {
+	margin-top: 17px;
+	margin-left: auto;
+	margin-bottom: 17px;
+}
+}
+
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+.main-nav__logo {
+	display: inline-block;
+	background-position: -87px 0;
+	width: 113px;
+	height: 46px;
+	margin: 0;
+	margin-top: 12px;
+	margin-bottom: 18px;
+	order: 1;
+}
+.main-nav::before {
+  content: "";
+  width: 100%;
+  order: 3;
+}
+.main-nav__list-main {
+	order: 4;
+}
+.main-nav__link {
+	font-size: 15px;
+}
+.main-nav__list-second {
+	display: none;
+}
+.main-nav__user-block {
+	order: 2;
+}
+.main-nav__block--hidden-mobile {
+	order: 5;
+}
+}
+@media (min-width: @desktop-width) {
+.main-nav__logo {
+	background-position: -201px 0;
+	width: 148px;
+	height: 73px;
+	order: 2;
+	margin: 0;
+}
+.main-nav__list-main {
+	order: 1;
+}
+.main-nav__list-second {
+	order: 4;
+}
+.main-nav__user-block {
+	order: 3;
+}
+.main-nav__block--hidden-mobile {
+	order: 5;
+}
+.main-nav__item {
+	width: 220px;
+}
+.main-nav__list-main {
+	margin-right: 10px;
+}
+.main-nav__link {
+	display: inline-block;
+}
+.main-nav__list-second .main-nav__link {
+	font-size: 15px;
+}
+}

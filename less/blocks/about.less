@@ -1,0 +1,114 @@
+.about {
+	margin-bottom: 90px;
+}
+.about__title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+	color: @color-base;
+	padding: 0 @padding-lateral-edge-mobile;
+	margin-bottom: 30px;
+}
+.about__list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 @padding-lateral-edge-mobile;
+	margin: 0;
+	margin-bottom: 34px;
+}
+.about__item {
+	list-style: none;
+	width: 260px;
+	margin-bottom: 5px;
+}
+.about__item::before {
+	background: url("../img/sprites.png") no-repeat;
+	width: 55px;
+	height: 37px;
+	display: table;
+	margin-bottom: 20px;
+	content: "";
+}
+.about__item--item1::before {
+	background-position: 0 -120px;
+}
+.about__item--item2::before {
+	background-position: -111px -120px;
+}
+.about__item--item3::before {
+	background-position: -222px -120px;
+}
+.about__item--item4::before {
+	background-position: -55px -120px;
+}
+.about__item--item5::before {
+	background-position: -166px -120px;
+}
+.about__item--item6::before {
+	background-position: -278px -120px;
+}
+.about__caption {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 20px;
+	color: @color-base;
+	margin: 10px 0 20px;
+}
+@media (min-width: @tablet-min-width) {
+.about__title {
+	padding: 0 @padding-lateral-edge-tablet;
+}
+.about__list {
+	padding: 0 @padding-lateral-edge-tablet;
+}
+.about__item {
+	width: 334px;
+	margin-bottom: 12px;
+}
+.about__item--item1 {
+	order: 1;
+}
+.about__item--item2 {
+	order: 3;
+}
+.about__item--item3 {
+	order: 5;
+}
+.about__item--item4 {
+	order: 2;
+}
+.about__item--item5 {
+	order: 4;
+}
+.about__item--item6 {
+	order: 6;
+}
+.about__caption {
+	font-size: 20px;
+	margin: 15px 0 45px;
+}
+}
+@media (min-width: @tablet-min-width) and (max-width: @tablet-max-width) {
+.about__title {
+	font-size: 43px;
+	line-height: 50px;
+	margin-bottom: 50px;
+}
+.about__list {
+	margin-bottom: 30px;
+}
+}
+@media (min-width: @desktop-width) {
+.about {
+	margin-left: 175px;
+	margin-bottom: 225px;
+}
+.about__item {
+	margin-right: 16px;
+}
+.about__title {
+	font-size: 53px;
+	line-height: 57px;
+	margin-bottom: 50px;
+}
+}
